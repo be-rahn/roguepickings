@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -63,6 +63,10 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: #77a466;
+}
+
+.navbar-nav {
+  margin-left: auto;
 }
 
 .top-section,
