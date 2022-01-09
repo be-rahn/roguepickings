@@ -27,6 +27,7 @@ p {
 
 header {
   height: 110px;
+
   border-bottom: 3px solid #77a466;
   margin: 0 auto;
 }
@@ -60,11 +61,34 @@ header nav ul li a {
   color: #77a466;
 }
 
-.navbar-nav {
-  margin-left: auto;
-  
+.navbar {
+  margin: 18px 145px 14px 145px;
 }
 
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-brand {
+  color: #77a466 !important;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  font-size: 30px !important;
+}
+
+.navbar-brand span {
+  color: black !important;
+}
+
+.nav-link {
+  color: #77a466 !important;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  padding: 0 10px !important;
+}
 .top-section,
 .bottom-section {
   margin: 0 auto;
@@ -75,6 +99,7 @@ header nav ul li a {
   height: auto;
 }
 .main-image img {
+  border-top: 3px solid #77a466;
   border-bottom: 3px solid #77a466;
 }
 
@@ -140,6 +165,21 @@ header nav ul li a {
 .address {
   font-size: 16px;
   line-height: 24px;
+}
+
+.wrap {
+  display: flex;
+}
+
+@media (max-width: 720px) {
+  .wrap {
+    flex-direction: column-reverse;
+  }
+  .section-one,
+  .section-two,
+  .section-three {
+    width: auto;
+  }
 }
 
 footer {
