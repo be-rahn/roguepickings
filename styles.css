@@ -112,6 +112,7 @@ header nav ul li a {
 .main-title h2 {
   padding: 5px 0;
   color: #77a466;
+  margin-bottom: 25px;
 }
 .main-title p {
   padding: 0;
@@ -122,6 +123,7 @@ header nav ul li a {
 .bottom-section {
   margin-left: 160px;
   margin-right: 160px;
+  margin-top: 55px;
 }
 
 .section-one,
@@ -139,7 +141,7 @@ header nav ul li a {
 .section-two {
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .section-two h3,
@@ -152,7 +154,7 @@ header nav ul li a {
   padding: 0;
 }
 .menu li {
-  padding: 10px 0;
+  padding: 10px 20px 0 0;
   color: #77a466;
 }
 
@@ -171,14 +173,35 @@ header nav ul li a {
   display: flex;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1112px) {
   .wrap {
     flex-direction: column-reverse;
   }
-  .section-one,
+  .section-three,
   .section-two,
-  .section-three {
+  .section-one {
     width: auto;
+    margin: auto;
+    padding: none;
+    text-align: left;
+  }
+
+  .section-three {
+   
+    justify-content: left;
+  }
+  .bottom-section,
+  .main-title {
+    margin: auto;
+    padding: 15px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .navbar {
+    margin: auto;
   }
 }
 
@@ -188,6 +211,7 @@ footer {
   margin: 0 auto;
   clear: both;
   text-align: center;
+  margin-top: 20px;
 }
 footer span {
   font-family: "Galada", cursive;
